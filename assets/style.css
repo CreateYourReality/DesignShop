@@ -1,0 +1,103 @@
+
+
+@font-face {
+    font-family: Karla;
+    src: url(./font/Karla-Regular.ttf);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Karla";
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    font-size: clamp(1rem,1.2vw,2rem);
+}
+
+main{
+    padding: 0 75px 75px 75px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+    padding:0 75px;
+}
+
+nav{
+    display:flex;
+    gap:50px;
+}
+
+
+section{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:20px;
+}
+
+h5{
+    text-align: right;
+}
+
+footer{
+    padding: 0 75px;
+}
+
+footer a{
+    display: block;
+    font-size: clamp(0.7rem,1vw,1.4rem);
+}
+
+footer section{
+    /* justify-content: space-between; */
+    gap:125px;
+    display: flex;
+}
+
+footer section div:first-of-type{
+    width: 200px;
+}
+
+.copyright{
+    padding: 50px  0 25px 0; 
+    color:grey;
+}
+
+h6{
+    font-size: clamp(0.9rem,1.2vw,1.8rem);
+    margin:20px 0;
+}
+
+
+main .small-section{
+    grid-template-rows: 1fr;
+}
+/* div{
+    display:grid;
+}
+
+div a img{
+    grid-area: 1 / 1 / 2 / 4;
+} */
+
+@media only screen and (max-width:600px) {
+    section{
+        grid-template-columns: 1fr;
+    }
+}
